@@ -1,38 +1,40 @@
-.services__container{
+.services__container {
+    @include flex;
+}
+
+
+.services__title {
+    @include reset-m-p;
+}
+
+
+.services__collection {
+    @include reset-m-p;
+}
+
+
+.collection__list {
+    @include reset-m-p;
+}
+
+
+.collection__item {
+    list-style: none;
+}
+
+
+.collection__item-img {
 
 }
 
 
-.services__title{
-
+.collection__title {
+    width: 255px;
+    height: 32px;
 }
 
 
-.services__collection{
-
-}
-
-
-.collection__list{
-
-}
-
-
-.collection__item{
-
-}
-
-
-.collection__item-img{
-
-}
-
-
-.collection__title{
-
-}
-
-
-.collection__description{
-
+.collection__description {
+    width: 255px;
+    height: 78px;
 }
