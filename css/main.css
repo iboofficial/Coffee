@@ -1,154 +1,80 @@
 @font-face {
-    font-family: 'Barlow';
-    src: url('../fonts/Barlow-Bold.woff2') format('woff2'),
-        url('../fonts/Barlow-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Fraunces';
-    src: url('../fonts/Fraunces-Bold.woff2') format('woff2'),
-        url('../fonts/Fraunces-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Fraunces';
+  src: url("../fonts/Fraunces-Bold.woff2") format("woff2"), url("../fonts/Fraunces-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Barlow';
-    src: url('../fonts/Barlow-Regular.woff2') format('woff2'),
-        url('../fonts/Barlow-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    margin: 0;
-    padding: 0;
-    font-family: "Barlow";
-    font-size: 16px;
-    line-height: 1.5;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F2F2F2;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .container {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-/* HEADER */
-
-.header {
-
-    padding: 44px;
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header__logo {
-    display: block;
-}
-
-.logo__img {
-    margin-left: 0;
-    margin-right: 730px;
-}
-
-.nav {
-    flex-grow: 1;
-}
-
-.nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.nav__nav-item {
-    margin-right: 33px;
-}
-
-.nav__nav-item:last-child {
-    margin-right: 0;
-}
-
-.nav__nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-decoration: none;
-    letter-spacing: 0.923077px;
-    text-transform: uppercase;
-    color: #83888F;
-}
-
-.intro{
-
-}
-
-.intro__container{
-    background-image: url(../img/Coffee-header.png);
-    background-repeat: no-repeat;
-}
-
-.intro-content{
-width: 493px;
-height: 367px;
-
-
-
-}
-
-.intro__title{
-
-color: #FEFCF7;
-}
-
-.intro__discription{
-    font-family: "Barlow", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FEFCF7;
-    opacity: 0.8;
-    margin-top: 32px;
-    margin-right: 750px;
-    margin-bottom: 56px;
-}
-
-.header__plan plan-link{
-
+  width: 1280px;
+  margin: 0 auto;
 }
