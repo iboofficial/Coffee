@@ -22,6 +22,8 @@ main {
 }
 
 .img {
+    vertical-align: middle;
+    object-fit: cover;
     max-width: 100%;
     height: auto;
 }
@@ -41,6 +43,7 @@ main {
 }
 
 .container {
-    width: 1280px;
+    width: 1320px;
     margin: 0 auto;
+    padding: o 20px;
 }
